@@ -1,0 +1,16 @@
+PODS:
+  - FGShortVideoKit (0.1.0)
+
+DEPENDENCIES:
+  - FGShortVideoKit (from `../`)
+
+EXTERNAL SOURCES:
+  FGShortVideoKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FGShortVideoKit: d86167559ac8a342d1836100a2cb7ac39aeff314
+
+PODFILE CHECKSUM: 87e061b5fdd6f11476bdd83b67ce29063a9797ea
+
+COCOAPODS: 1.9.3
