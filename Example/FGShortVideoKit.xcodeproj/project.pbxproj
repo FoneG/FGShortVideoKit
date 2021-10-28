@@ -24,6 +24,13 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		89C61441BD781105A409816D /* Pods_FGShortVideoKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED5C06E803563C6A908AAA7 /* Pods_FGShortVideoKit_Tests.framework */; };
+		B4725504272A87E30073C9E9 /* FGFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B4725503272A87E30073C9E9 /* FGFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4725507272A87E30073C9E9 /* FGFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4725501272A87E30073C9E9 /* FGFramework.framework */; };
+		B4725508272A87E30073C9E9 /* FGFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4725501272A87E30073C9E9 /* FGFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B472550E272A882D0073C9E9 /* TestB.m in Sources */ = {isa = PBXBuildFile; fileRef = B472550C272A882D0073C9E9 /* TestB.m */; };
+		B472550F272A882D0073C9E9 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = B472550D272A882D0073C9E9 /* Test.m */; };
+		B4725512272A88540073C9E9 /* TestB.h in Headers */ = {isa = PBXBuildFile; fileRef = B4725510272A88540073C9E9 /* TestB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4725513272A88550073C9E9 /* Test.h in Headers */ = {isa = PBXBuildFile; fileRef = B4725511272A88540073C9E9 /* Test.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +41,32 @@
 			remoteGlobalIDString = 6003F589195388D20070C39A;
 			remoteInfo = FGShortVideoKit;
 		};
+		B4725505272A87E30073C9E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4725500272A87E30073C9E9;
+			remoteInfo = FGFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B47254C9272A7F660073C9E9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B4725508272A87E30073C9E9 /* FGFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		06482711DC66CD1DBEAC1EB7 /* Pods-FGShortVideoKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGShortVideoKit_Example.release.xcconfig"; path = "Target Support Files/Pods-FGShortVideoKit_Example/Pods-FGShortVideoKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3C8DCF5B4C17A69DBBDF0B5E /* FGShortVideoKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FGShortVideoKit.podspec; path = ../FGShortVideoKit.podspec; sourceTree = "<group>"; };
+		3C8DCF5B4C17A69DBBDF0B5E /* FGShortVideoKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FGShortVideoKit.podspec; path = ../FGShortVideoKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		41F3135DD5F289C679E3542D /* Pods-FGShortVideoKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGShortVideoKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-FGShortVideoKit_Tests/Pods-FGShortVideoKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* FGShortVideoKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FGShortVideoKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,12 +88,25 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		728CB0357EDA5BA2EAE46AEA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		728CB0357EDA5BA2EAE46AEA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B47254B4272A7F660073C9E9 /* FGShortVideoKitFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGShortVideoKitFramework.h; sourceTree = "<group>"; };
+		B47254B5272A7F660073C9E9 /* FGShortVideoKitFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = FGShortVideoKitFramework.docc; sourceTree = "<group>"; };
+		B47254C2272A7F660073C9E9 /* FGShortVideoKitFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGShortVideoKitFrameworkTests.m; sourceTree = "<group>"; };
+		B47254E0272A81160073C9E9 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Test.h; path = ../FGShortVideoKit/Classes/Test.h; sourceTree = "<group>"; };
+		B47254E1272A81160073C9E9 /* TestB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TestB.h; path = ../FGShortVideoKit/Classes/TestB.h; sourceTree = "<group>"; };
+		B47254E4272A81CB0073C9E9 /* TestB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TestB.m; path = ../FGShortVideoKit/Classes/TestB.m; sourceTree = "<group>"; };
+		B47254E5272A81CB0073C9E9 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Test.m; path = ../FGShortVideoKit/Classes/Test.m; sourceTree = "<group>"; };
+		B4725501272A87E30073C9E9 /* FGFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FGFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4725503272A87E30073C9E9 /* FGFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGFramework.h; sourceTree = "<group>"; };
+		B472550C272A882D0073C9E9 /* TestB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TestB.m; path = ../FGShortVideoKit/Classes/TestB.m; sourceTree = "<group>"; };
+		B472550D272A882D0073C9E9 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Test.m; path = ../FGShortVideoKit/Classes/Test.m; sourceTree = "<group>"; };
+		B4725510272A88540073C9E9 /* TestB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TestB.h; path = ../FGShortVideoKit/Classes/TestB.h; sourceTree = "<group>"; };
+		B4725511272A88540073C9E9 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Test.h; path = ../FGShortVideoKit/Classes/Test.h; sourceTree = "<group>"; };
 		B67EBA0564BD85FB82A3D131 /* Pods_FGShortVideoKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FGShortVideoKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B710AAF70520448077E31DB0 /* Pods-FGShortVideoKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGShortVideoKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FGShortVideoKit_Tests/Pods-FGShortVideoKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CED5C06E803563C6A908AAA7 /* Pods_FGShortVideoKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FGShortVideoKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE1095F109A3F958A41DEECB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DE1095F109A3F958A41DEECB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		ED2A28F0D6CE9A67267F19FC /* Pods-FGShortVideoKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGShortVideoKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-FGShortVideoKit_Example/Pods-FGShortVideoKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +119,7 @@
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				49C9C2DFD60347199EE8B776 /* Pods_FGShortVideoKit_Example.framework in Frameworks */,
+				B4725507272A87E30073C9E9 /* FGFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,15 +134,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B47254FE272A87E30073C9E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				B4725511272A88540073C9E9 /* Test.h */,
+				B4725510272A88540073C9E9 /* TestB.h */,
+				B47254E5272A81CB0073C9E9 /* Test.m */,
+				B472550D272A882D0073C9E9 /* Test.m */,
+				B47254E4272A81CB0073C9E9 /* TestB.m */,
+				B472550C272A882D0073C9E9 /* TestB.m */,
+				B47254E0272A81160073C9E9 /* Test.h */,
+				B47254E1272A81160073C9E9 /* TestB.h */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for FGShortVideoKit */,
 				6003F5B5195388D20070C39A /* Tests */,
+				B47254B3272A7F660073C9E9 /* FGShortVideoKitFramework */,
+				B47254C1272A7F660073C9E9 /* FGShortVideoKitFrameworkTests */,
+				B4725502272A87E30073C9E9 /* FGFramework */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				95EC42BF786AD02D85F09988 /* Pods */,
@@ -112,6 +172,7 @@
 			children = (
 				6003F58A195388D20070C39A /* FGShortVideoKit_Example.app */,
 				6003F5AE195388D20070C39A /* FGShortVideoKit_Tests.xctest */,
+				B4725501272A87E30073C9E9 /* FGFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,11 +254,48 @@
 				B710AAF70520448077E31DB0 /* Pods-FGShortVideoKit_Tests.debug.xcconfig */,
 				41F3135DD5F289C679E3542D /* Pods-FGShortVideoKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B47254B3272A7F660073C9E9 /* FGShortVideoKitFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B47254B4272A7F660073C9E9 /* FGShortVideoKitFramework.h */,
+				B47254B5272A7F660073C9E9 /* FGShortVideoKitFramework.docc */,
+			);
+			path = FGShortVideoKitFramework;
+			sourceTree = "<group>";
+		};
+		B47254C1272A7F660073C9E9 /* FGShortVideoKitFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				B47254C2272A7F660073C9E9 /* FGShortVideoKitFrameworkTests.m */,
+			);
+			path = FGShortVideoKitFrameworkTests;
+			sourceTree = "<group>";
+		};
+		B4725502272A87E30073C9E9 /* FGFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B4725503272A87E30073C9E9 /* FGFramework.h */,
+			);
+			path = FGFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B47254FC272A87E30073C9E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4725504272A87E30073C9E9 /* FGFramework.h in Headers */,
+				B4725512272A88540073C9E9 /* TestB.h in Headers */,
+				B4725513272A88550073C9E9 /* Test.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		6003F589195388D20070C39A /* FGShortVideoKit_Example */ = {
@@ -208,11 +306,13 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				5E76A8C3DB9AFB6CE0B05C9C /* [CP] Embed Pods Frameworks */,
+				39A3990B86142171DBF83300 /* [CP] Embed Pods Frameworks */,
+				B47254C9272A7F660073C9E9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B4725506272A87E30073C9E9 /* PBXTargetDependency */,
 			);
 			name = FGShortVideoKit_Example;
 			productName = FGShortVideoKit;
@@ -238,6 +338,24 @@
 			productReference = 6003F5AE195388D20070C39A /* FGShortVideoKit_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B4725500272A87E30073C9E9 /* FGFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4725509272A87E30073C9E9 /* Build configuration list for PBXNativeTarget "FGFramework" */;
+			buildPhases = (
+				B47254FC272A87E30073C9E9 /* Headers */,
+				B47254FD272A87E30073C9E9 /* Sources */,
+				B47254FE272A87E30073C9E9 /* Frameworks */,
+				B47254FF272A87E30073C9E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FGFramework;
+			productName = FGFramework;
+			productReference = B4725501272A87E30073C9E9 /* FGFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -251,6 +369,10 @@
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
+					B4725500272A87E30073C9E9 = {
+						CreatedOnToolsVersion = 13.0;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "FGShortVideoKit" */;
@@ -258,6 +380,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -268,6 +391,7 @@
 			targets = (
 				6003F589195388D20070C39A /* FGShortVideoKit_Example */,
 				6003F5AD195388D20070C39A /* FGShortVideoKit_Tests */,
+				B4725500272A87E30073C9E9 /* FGFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -292,9 +416,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B47254FF272A87E30073C9E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		39A3990B86142171DBF83300 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FGShortVideoKit_Example/Pods-FGShortVideoKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FGShortVideoKit/FGShortVideoKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FGShortVideoKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FGShortVideoKit_Example/Pods-FGShortVideoKit_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		481684D069207795D6CD38EA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -339,24 +488,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5E76A8C3DB9AFB6CE0B05C9C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FGShortVideoKit_Example/Pods-FGShortVideoKit_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FGShortVideoKit/FGShortVideoKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FGShortVideoKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FGShortVideoKit_Example/Pods-FGShortVideoKit_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -378,6 +509,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B47254FD272A87E30073C9E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B472550E272A882D0073C9E9 /* TestB.m in Sources */,
+				B472550F272A882D0073C9E9 /* Test.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -385,6 +525,11 @@
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* FGShortVideoKit_Example */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+		B4725506272A87E30073C9E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4725500272A87E30073C9E9 /* FGFramework */;
+			targetProxy = B4725505272A87E30073C9E9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -497,6 +642,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FGShortVideoKit/FGShortVideoKit-Prefix.pch";
 				INFOPLIST_FILE = "FGShortVideoKit/FGShortVideoKit-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +659,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FGShortVideoKit/FGShortVideoKit-Prefix.pch";
 				INFOPLIST_FILE = "FGShortVideoKit/FGShortVideoKit-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -567,6 +714,105 @@
 			};
 			name = Release;
 		};
+		B472550A272A87E30073C9E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 15757127193@163.com. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = FongG.com.FGFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B472550B272A87E30073C9E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 15757127193@163.com. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = FongG.com.FGFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -593,6 +839,15 @@
 			buildConfigurations = (
 				6003F5C3195388D20070C39A /* Debug */,
 				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4725509272A87E30073C9E9 /* Build configuration list for PBXNativeTarget "FGFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B472550A272A87E30073C9E9 /* Debug */,
+				B472550B272A87E30073C9E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
