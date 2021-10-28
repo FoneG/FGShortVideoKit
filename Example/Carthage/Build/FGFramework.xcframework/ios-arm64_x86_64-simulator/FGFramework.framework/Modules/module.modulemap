@@ -1,0 +1,6 @@
+framework module FGFramework {
+  umbrella header "FGFramework.h"
+
+  export *
+  module * { export * }
+}

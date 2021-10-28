@@ -1,0 +1,26 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "62c311e77a955d2461438ce9f4544e16b2b0d865",
+  "iOS" : [
+    {
+      "hash" : "0be1e54e087960cb5b8996bf1e11619074cdcb64df471e2d05fbe99df655df68",
+      "name" : "FGFramework",
+      "container" : "FGFramework.xcframework",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "hash" : "8f475886f204c0f710bbe8b39d0c787ba95a108b184337efa62adb7b141e1e8a",
+      "name" : "FGFramework",
+      "container" : "FGFramework.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    }
+  ]
+}
